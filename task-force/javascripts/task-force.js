@@ -32,3 +32,46 @@ function clock()
 	time = weekdays[weekday] + " " + day + " " + months[month] + " " + year + " " + hours + ":" + minutes + " " + indicator;
 	$(".date").html(time);
 }
+
+/*
+var TaskForce = {
+	init:function(){
+		TaskForce.setupWindow();  
+	},
+	
+	minimize:function(){
+		nativeWindow.minimize();  
+	},
+	
+	move:function(){
+		nativeWindow.startMove();  
+	},
+	
+	quit:function(){
+		var exitingEvent = new air.Event(air.Event.EXITING, false, true);  
+		
+		air.NativeApplication.nativeApplication.dispatchEvent(exitingEvent);  
+		
+		if (!exitingEvent.isDefaultPrevented()){  
+			air.NativeApplication.nativeApplication.exit();  
+		}  
+	},
+	
+	setupWindow:function(){
+		$('.minimize').bind('click', function(event){
+			event.preventDefault();
+			TaskForce.minimize();
+		});
+		
+		$('.close').bind('click', function(event){
+			event.preventDefault();
+			TaskForce.quit();
+		});
+		
+		$('.handle').bind('mousedown', function(event){
+			event.preventDefault();
+			TaskForce.move();
+		});
+	}
+};
+*/

@@ -1,0 +1,20 @@
+label, input, textarea, select, option		{border:none; margin:2px 0px; padding:0px;}
+a 											{color:#333333;}
+                            				
+ul, ul li 									{margin:0px; padding:0px; float:left; width:100%; list-style-type:none;}
+                            				
+.task-force 								{float:left; width:550px; padding:15px; font-family:"Arial", Arial, Sans; color:#FFFFFF; font-size:12px; background:#333333;}
+.task-force h1 								{float:left; font-size:18px; font-weight:normal; text-transform:uppercase;}
+.task-force .date 							{float:right;}
+.task-force .project select 				{width:45%;}
+.task-force .project input 					{float:right; width:45%;}
+.task-force .category select 				{width:45%;}
+.task-force .category input 				{float:right; width:45%;}
+.task-force .issue 							{float:left; width:100%;}
+.task-force .description 					{float:left; width:100%; font-family:"Arial", Arial, Sans; font-size:12px;}
+.task-force .submit 						{float:right;}
+                            				
+.task-force table.issues					{float:left; width:100%; padding:10px; color:#333333; text-align:left; background:#FFFFFF;}
+.task-force table.issues tbody tr.odd 		{background:#D8D8D8;}
+.task-force table.issues tbody tr.even 		{background:#FFFFFF;}
+.task-force table.issues .issue 			{width:150px; overflow:hidden; white-space:nowrap;}
