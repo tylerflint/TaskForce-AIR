@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?> 
 <application xmlns="http://ns.adobe.com/air/application/1.5"> 
-    <id>Task Force</id> 
+    <id>TaskForce</id> 
     <version>0.1</version> 
     <filename>Task Force</filename> 
     <name>Task Force</name> 
@@ -22,12 +22,14 @@
     </initialWindow>  
     <installFolder>Task Force</installFolder> 
     <programMenuFolder>Task Force</programMenuFolder> 
-    <icon> 
+    <!--
+	<icon> 
         <image16x16>icons/taskforce-16.png</image16x16> 
         <image32x32>icons/taskforce-32.png</image32x32> 
         <image48x48>icons/taskforce-48.png</image48x48> 
         <image128x128>icons/taskforce-128.png</image128x128>  
     </icon> 
+	-->
     <customUpdateUI>true</customUpdateUI> 
     <allowBrowserInvocation>true</allowBrowserInvocation> 
 </application>
