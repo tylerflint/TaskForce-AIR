@@ -1,17 +1,25 @@
-label, input, textarea, select, option		{border:none; margin:2px 0px; padding:0px;}
+* 											{border:none; outline:none;}
+
 a 											{color:#333333;}
                             				
-ul, ul li 									{margin:0px; padding:0px; float:left; width:100%; list-style-type:none;}
-                            				
-.task-force 								{float:left; width:550px; padding:15px; font-family:"Arial", Arial, Sans; color:#FFFFFF; font-size:12px; background:#333333;}
+ul, ul li 									{margin:0px; padding:0px; list-style-type:none;}
+        
+.toggle 									{float:left; width:10px; height:10px; margin:0px 5px 0px 0px; color:#FFFFFF; text-decoration:none;}
+.hidden 									{display:none;}
+                    				
+.task-force 								{position:relative; float:left; width:550px; padding:15px; font-family:"Arial", Arial, Sans; color:#FFFFFF; font-size:12px; background:#333333; -moz-border-radius:15px 15px 0px 0px; border-radius:15px 15px 0px 0px; -moz-box-shadow: 0px 0px 12px #000000; -webkit-box-shadow: 0px 0px 12px #000000; box-shadow: 0px 0px 12px #000000;}
+.task-force ul, .create ul li 				{float:left; width:100%; margin:2px 0px; overflow:hidden;}
+.task-force .create .header					{float:left; width:100%;}
+.task-force input					 		{padding:0px 3px;}
+.task-force input, .create select 			{height:24px;}
 .task-force h1 								{float:left; font-size:18px; font-weight:normal; text-transform:uppercase;}
-.task-force .date 							{float:right;}
-.task-force .project select 				{width:45%;}
+.task-force .date 							{position:absolute; top:0px; right:15px;}
+.task-force .project select 				{width:45%; padding:3px 0px 0px 0px;}
 .task-force .project input 					{float:right; width:45%;}
-.task-force .category select 				{width:45%;}
+.task-force .category select 				{width:45%; padding:3px 0px 0px 0px;}
 .task-force .category input 				{float:right; width:45%;}
 .task-force .issue 							{float:left; width:100%;}
-.task-force .description 					{float:left; width:100%; font-family:"Arial", Arial, Sans; font-size:12px;}
+.task-force .description 					{float:left; width:100%; padding:2px 0px 0px 2px; font-family:"Arial", Arial, Sans; font-size:12px;}
 .task-force .submit 						{float:right;}
                             				
 .task-force table.issues					{float:left; width:100%; padding:10px; color:#333333; text-align:left; background:#FFFFFF;}

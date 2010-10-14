@@ -16,11 +16,6 @@ function clock()
 	year += ''
 
 	var hours = currentTime.getHours();
-	hours = (hours > 12) ? hours - 12 : hours;
-	hours = (hours == 0) ? hours = 1 : hours;
-
-	var minutes = currentTime.getMinutes();
-	minutes = (minutes < 10) ? minutes = "0" + minutes : minutes;
 	
 	var indicator = "";
 	if(hours < 11){
@@ -29,11 +24,16 @@ function clock()
 		indicator = "pm"
 	}
 	
+	hours = (hours > 12) ? hours - 12 : hours;
+	hours = (hours == 0) ? hours = 1 : hours;
+
+	var minutes = currentTime.getMinutes();
+	minutes = (minutes < 10) ? minutes = "0" + minutes : minutes;	
+	
 	time = weekdays[weekday] + " " + day + " " + months[month] + " " + year + " " + hours + ":" + minutes + " " + indicator;
 	$(".date").html(time);
 }
 
-/*
 var TaskForce = {
 	init:function(){
 		TaskForce.setupWindow();  
@@ -74,4 +74,3 @@ var TaskForce = {
 		});
 	}
 };
-*/
