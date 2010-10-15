@@ -7,7 +7,7 @@ ul, ul li 									{margin:0px; padding:0px; list-style-type:none;}
 .toggle 									{float:left; width:10px; height:10px; margin:0px 5px 0px 0px; color:#FFFFFF; text-decoration:none;}
 .hidden 									{display:none;}
                     				
-.task-force 								{position:relative; float:left; width:550px; padding:15px; font-family:"Arial", Arial, Sans; color:#FFFFFF; font-size:12px; background:#333333; -moz-border-radius:15px 15px 0px 0px; border-radius:15px 15px 0px 0px; -moz-box-shadow: 0px 0px 12px #000000; -webkit-box-shadow: 0px 0px 12px #000000; box-shadow: 0px 0px 12px #000000;}
+.task-force 								{position:relative; float:left; width:550px; padding:15px; font-family:"Arial", Arial, Sans; color:#FFFFFF; font-size:12px; background:#333333; -moz-border-radius:5px; border-radius:5px; -moz-box-shadow: 0px 0px 12px #000000; -webkit-box-shadow: 0px 0px 12px #000000; box-shadow: 0px 0px 12px #000000;}
 .task-force ul, .create ul li 				{float:left; width:100%; margin:2px 0px; overflow:hidden;}
 .task-force .create .header					{float:left; width:100%;}
 .task-force input					 		{padding:0px 3px;}

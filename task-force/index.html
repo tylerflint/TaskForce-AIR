@@ -16,104 +16,106 @@
 	</head>
 	
 	<body>
-		<div class='task-force'>
-			<p class='date'></p>
-			<div class="create">
-				<h1 class='header'><a href="#link" onclick="toggle()" class="toggle">+</a> Create new Issue:</h1>
-				<form class='create-issue hidden'>
-					<ul>
-						<li class='project'>
-							<select>
-								<option selected="selected">New Project</option>
-								<option>Project 1</option>
-								<option>Project 2</option>
-								<option>Project 3</option>
-								<option>Project 4</option>
-							</select>
-							<input type="text" class="new project" value="Project Name" onFocus='this.value = ""' onBlur='if(this.value == "") this.value = this.defaultValue;'/>
-						</li>
-					
-						<li class='category'>
-							<select>
-								<option selected="selected">New Category </option>
-								<option>Category 1</option>
-								<option>Category 2</option>
-								<option>Category 3</option>
-								<option>Category 4</option>
-							</select>
-							<input type="text" class="new category" value="Category Name" onFocus='this.value = ""' onBlur='if(this.value == "") this.value = this.defaultValue;'/>
-						</li>
-					
-						<li>
-							<input type="text" class="issue" value="Issue" onFocus='this.value = ""' onBlur='if(this.value == "") this.value = this.defaultValue;'/>
-						</li>
-					
-						<li>
-							<textarea class='description' onFocus='this.value = ""' onBlur='if(this.value == "") this.value = this.defaultValue;'>Description</textarea>
-						</li>
-					
-						<li>
-							<input type="submit" class="submit" value="Submit Issue"/>
-						</li>
-					</ul>
-				</form>
-			</div>
-			
-			<div class="list">
-				<h1>Issues:</h1>
-				<table class="issues" border="0" cellpadding="2" cellspacing="0">
-					<thead>
-						<tr>
-							<th style="" class=""><a title="" href="#link">#</a></th>
-							<th style="" class="">
+		<div class="wrapper">
+			<div class='task-force'>
+				<p class='date'></p>
+				<div class="create">
+					<h1 class='header'><a href="#link" onclick="toggle()" class="toggle">+</a> Create new Issue:</h1>
+					<form class='create-issue hidden'>
+						<ul>
+							<li class='project'>
 								<select>
+									<option selected="selected">New Project</option>
 									<option>Project 1</option>
 									<option>Project 2</option>
 									<option>Project 3</option>
 									<option>Project 4</option>
 								</select>
-							</th>
-							<th style="" class="">
+								<input type="text" class="new project" value="Project Name" onFocus='this.value = ""' onBlur='if(this.value == "") this.value = this.defaultValue;'/>
+							</li>
+					
+							<li class='category'>
 								<select>
+									<option selected="selected">New Category </option>
 									<option>Category 1</option>
 									<option>Category 2</option>
 									<option>Category 3</option>
 									<option>Category 4</option>
 								</select>
-							</th>
-							<th style="" class="">issue</th>
-							<th style="" class=""><a title="" href="#link">created</a></th>
-							<th style="" class="">status</th>
-						</tr>
-					</thead>
+								<input type="text" class="new category" value="Category Name" onFocus='this.value = ""' onBlur='if(this.value == "") this.value = this.defaultValue;'/>
+							</li>
+					
+							<li>
+								<input type="text" class="issue" value="Issue" onFocus='this.value = ""' onBlur='if(this.value == "") this.value = this.defaultValue;'/>
+							</li>
+					
+							<li>
+								<textarea class='description' onFocus='this.value = ""' onBlur='if(this.value == "") this.value = this.defaultValue;'>Description</textarea>
+							</li>
+					
+							<li>
+								<input type="submit" class="submit" value="Submit Issue"/>
+							</li>
+						</ul>
+					</form>
+				</div>
+			
+				<div class="list">
+					<h1>Issues:</h1>
+					<table class="issues" border="0" cellpadding="2" cellspacing="0">
+						<thead>
+							<tr>
+								<th style="" class=""><a title="" href="#link">#</a></th>
+								<th style="" class="">
+									<select>
+										<option>Project 1</option>
+										<option>Project 2</option>
+										<option>Project 3</option>
+										<option>Project 4</option>
+									</select>
+								</th>
+								<th style="" class="">
+									<select>
+										<option>Category 1</option>
+										<option>Category 2</option>
+										<option>Category 3</option>
+										<option>Category 4</option>
+									</select>
+								</th>
+								<th style="" class="">issue</th>
+								<th style="" class=""><a title="" href="#link">created</a></th>
+								<th style="" class="">status</th>
+							</tr>
+						</thead>
 				
-					<tbody>
-						<tr class="odd">
-							<td>1.</td>
-							<td>chromada</td>
-							<td>development</td>
-							<td class='issue' title='what happens if i put in a really long issue name'>what happens if i put in a really long issue name</td>
-							<td>10/12/10</td>
-							<td><a href='#link' class='status'>incomplete</a></td>
-						</tr>
-						<tr class="even">
-							<td>2.</td>
-							<td>chromada</td>
-							<td>development</td>
-							<td>login redirect</td>
-							<td>10/12/10</td>
-							<td><a href='#link' class='status'>incomplete</a></td>
-						</tr>
-						<tr class="odd">
-							<td>3.</td>
-							<td>chromada</td>
-							<td>development</td>
-							<td>login redirect</td>
-							<td>10/12/10</td>
-							<td><a href='#link' class='status'>incomplete</a></td>
-						</tr>
-					</tfoot>
-				</table>
+						<tbody>
+							<tr class="odd">
+								<td>1.</td>
+								<td>chromada</td>
+								<td>development</td>
+								<td class='issue' title='what happens if i put in a really long issue name'>what happens if i put in a really long issue name</td>
+								<td>10/12/10</td>
+								<td><a href='#link' class='status'>incomplete</a></td>
+							</tr>
+							<tr class="even">
+								<td>2.</td>
+								<td>chromada</td>
+								<td>development</td>
+								<td>login redirect</td>
+								<td>10/12/10</td>
+								<td><a href='#link' class='status'>incomplete</a></td>
+							</tr>
+							<tr class="odd">
+								<td>3.</td>
+								<td>chromada</td>
+								<td>development</td>
+								<td>login redirect</td>
+								<td>10/12/10</td>
+								<td><a href='#link' class='status'>incomplete</a></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
 			</div>
 		</div>
 	</body>
